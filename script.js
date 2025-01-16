@@ -5,14 +5,19 @@ const translations = {
         "legend-title": "Legend of the Aurelian Kingdom",
         "legend-text": `
             <h3>1. Origin of the Kingdom</h3>
-            <p>Aurelia, "The Golden Kingdom," was founded more than a thousand years ago by the great King Evandor I, who led his people across the Solaris Mountains to fertile lands filled with golden rivers and radiant forests. At the heart of the kingdom, the capital city of Solaris was built — the City of Light, where a ruler sat upon a throne of pure gold, safeguarding the peace and prosperity of Aurelia.</p>
-            <p>According to legend, the sun god Auris blessed this land, promising that its people would live in harmony with nature, but only as long as they maintained its balance and order.</p>
+            <p>Aurelia, "The Golden Kingdom," was founded more than a thousand years ago by the great King Evandor I...</p>
             <h3>2. Structure of the Kingdom and Counties</h3>
             <p>Aurelia is divided into five grand duchies, each further subdivided into counties...</p>
             <h3>3. Governance of the Kingdom</h3>
             <p>Each duchy is governed by a duke who reports directly to the king...</p>
         `,
         "map-title": "Interactive Map",
+        "explore-title": "Explore the Duchies",
+        "lumiria-link": "Duchy of Lumiria",
+        "viridia-link": "Duchy of Viridia",
+        "infernia-link": "Duchy of Infernia",
+        "aquelia-link": "Duchy of Aquelia",
+        "aurelinum-link": "Duchy of Aurelinum",
         footer: "&copy; 2025 Aurelian Kingdom. All Rights Reserved."
     },
     ru: {
@@ -28,6 +33,12 @@ const translations = {
             <p>Каждое герцогство управляется герцогом, который подчиняется непосредственно королю...</p>
         `,
         "map-title": "Интерактивная карта",
+        "explore-title": "Исследуйте герцогства",
+        "lumiria-link": "Герцогство Люмирия",
+        "viridia-link": "Герцогство Виридия",
+        "infernia-link": "Герцогство Инферния",
+        "aquelia-link": "Герцогство Аквелия",
+        "aurelinum-link": "Герцогство Аурелинум",
         footer: "&copy; 2025 Королевство Аурелия. Все права защищены."
     },
     ua: {
@@ -43,47 +54,14 @@ const translations = {
             <p>Кожне герцогство управляється герцогом, який підпорядковується безпосередньо королю...</p>
         `,
         "map-title": "Інтерактивна карта",
-        footer: "&copy; 2025 Королівство Аурелія. Усі права захищені."
-    }
-};
-
-function setLanguage(lang) {
-    const elements = document.querySelectorAll("[id]");
-    elements.forEach((el) => {
-        const key = el.id;
-        if (translations[lang][key]) {
-            if (key === "legend-text") {
-                el.innerHTML = translations[lang][key]; // Поддержка HTML в легенде
-            } else {
-                el.textContent = translations[lang][key];
-            }
-        }
-    });
-}
-const translations = {
-    en: {
-        explore-title: "Explore the Duchies",
-        "lumiria-link": "Duchy of Lumiria",
-        "viridia-link": "Duchy of Viridia",
-        "infernia-link": "Duchy of Infernia",
-        "aquelia-link": "Duchy of Aquelia",
-        "aurelinum-link": "Duchy of Aurelinum"
-    },
-    ru: {
-        explore-title: "Исследуйте герцогства",
-        "lumiria-link": "Герцогство Люмирия",
-        "viridia-link": "Герцогство Виридия",
-        "infernia-link": "Герцогство Инферния",
-        "aquelia-link": "Герцогство Аквелия",
-        "aurelinum-link": "Герцогство Аурелинум"
-    },
-    ua: {
-        explore-title: "Дослідіть герцогства",
+        "explore-title": "Дослідіть герцогства",
         "lumiria-link": "Герцогство Люмирія",
         "viridia-link": "Герцогство Вірідія",
         "infernia-link": "Герцогство Інфернія",
         "aquelia-link": "Герцогство Аквелія",
-        "aurelinum-link": "Герцогство Аурелінум"
+        "aurelinum-link": "Герцогство Аурелінум",
+        footer: "&copy; 2025 Королівство Аурелія. Усі права захищені."
     }
 };
+
 
