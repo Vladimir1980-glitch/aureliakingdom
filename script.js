@@ -60,3 +60,30 @@ function setLanguage(lang) {
         }
     });
 }
+const translations = {
+    en: {
+        explore-title: "Explore the Duchies",
+        "lumiria-link": "Duchy of Lumiria",
+        "viridia-link": "Duchy of Viridia",
+        "infernia-link": "Duchy of Infernia",
+        "aquelia-link": "Duchy of Aquelia",
+        "aurelinum-link": "Duchy of Aurelinum"
+    },
+    ru: {
+        explore-title: "Исследуйте герцогства",
+        "lumiria-link": "Герцогство Люмирия",
+        "viridia-link": "Герцогство Виридия",
+        "infernia-link": "Герцогство Инферния",
+        "aquelia-link": "Герцогство Аквелия",
+        "aurelinum-link": "Герцогство Аурелинум"
+    },
+    ua: {
+        explore-title: "Дослідіть герцогства",
+        "lumiria-link": "Герцогство Люмирія",
+        "viridia-link": "Герцогство Вірідія",
+        "infernia-link": "Герцогство Інфернія",
+        "aquelia-link": "Герцогство Аквелія",
+        "aurelinum-link": "Герцогство Аурелінум"
+    }
+};
+
